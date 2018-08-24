@@ -9,9 +9,26 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  min-height: 150px;
   padding: 20px;
   color: white;
+}
+
+.App-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-nav a {
+  color: white;
+  padding: 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.App-nav a:hover {
+  text-decoration: underline;
 }
 
 .App-title {
@@ -20,6 +37,7 @@
 
 .App-intro {
   font-size: large;
+  margin: 1em;
 }
 
 @keyframes App-logo-spin {
