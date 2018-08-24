@@ -6,6 +6,7 @@ import { Security } from '@okta/okta-react';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import { AuthProvider } from './Auth';
 
 const oktaConfig = {
   issuer: `${process.env.REACT_APP_OKTA_ORG_URL}/oauth2/default`,
@@ -16,7 +17,9 @@ const oktaConfig = {
 ReactDOM.render(
   <BrowserRouter>
     <Security {...oktaConfig}>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </Security>
   </BrowserRouter>,
   document.getElementById('root')
