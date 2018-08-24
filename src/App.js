@@ -6,6 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Auth from './Auth';
+import LoginButton from './LoginButton';
 
 const welcomeUser = ({ user }) => user
   ? `Welcome, ${user.given_name || user.name}!`
@@ -23,6 +24,7 @@ class App extends Component {
           <nav className="App-nav">
             <Link to="/">Home</Link>
             <Link to="/profile">Profile</Link>
+            <LoginButton />
           </nav>
         </header>
         <main className="App-intro">
