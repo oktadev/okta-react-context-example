@@ -7,6 +7,7 @@ import './App.css';
 
 import Auth from './Auth';
 import LoginButton from './LoginButton';
+import ProfilePage from './Profile';
 
 const welcomeUser = ({ user }) => user
   ? `Welcome, ${user.given_name || user.name}!`
@@ -29,7 +30,7 @@ class App extends Component {
         </header>
         <main className="App-intro">
           <Route exact path="/" component={() => 'Home Page'} />
-          <SecureRoute exact path="/profile" component={() => 'Profile page'} />
+          <SecureRoute exact path="/profile" component={ProfilePage} />
           <Route path="/implicit/callback" component={ImplicitCallback} />
         </main>
       </div>
