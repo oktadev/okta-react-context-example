@@ -8,7 +8,7 @@
   "license": "Apache 2.0",
   "dependencies": {
     "@okta/okta-react": "^1.0.3",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router-dom": "^4.3.1",
